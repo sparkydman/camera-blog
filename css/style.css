@@ -1,0 +1,158 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    /* font-size: 20pt; */
+    font-weight: 700;
+    letter-spacing: 1.5;
+}
+h3{
+    /* font-size: 18pt; */
+}
+.container{
+    position: relative;
+}
+nav{
+    position: relative;
+}
+nav h3{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    font-weight: bold;
+    color: #438bf7;
+}
+
+nav .nav-img{
+    position: absolute;
+    top: 52px;
+    right: 0;
+}
+nav ul{
+    display: flex;
+    position: absolute;
+    top: 84px;
+    right: 0;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 18px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: #333333;;
+}
+nav ul li a:hover{
+    color: #438bf7;
+    text-decoration: none;
+}
+.main-content{
+    display: grid;
+    grid-template-areas: 
+    'left-aside main main right-aside'
+    ;
+    gap: 15px;
+    margin-top: 35px;
+    text-align: justify;
+}
+.left-aside{
+    grid-area: left-aside;
+    /* max-height: 645px;
+    position: fixed;
+    overflow: hidden; */
+}
+main{
+    grid-area: main;
+    /* margin-left: 205px;
+    min-height: 645px;
+    overflow-y: scroll; */
+}
+.right-aside{
+    grid-area: right-aside;
+    background: #333333;
+}
+.right-aside h2{
+    color: #ffffff;
+    padding: 10px;
+}
+.right-aside ul li{
+    list-style: none;
+}
+.right-aside ul li a{
+    color: #f0d700;
+}
+.right-aside ul li a:hover{
+    text-decoration: none;
+    color: #438bf7;
+}
+.article-detail strong, .article-detail em{
+    display: block;
+    text-align: end;
+}
+.related-articles{
+    margin-top: 85px;
+}
+.related-articles > strong{
+    display: block;
+}
+input{
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+input[type="submit"]{
+    background: #f0d700;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+}
+footer{
+    background: #71706f;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+
+}
+footer > p{
+    margin-bottom: 0px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom ul{
+    display: flex;
+}
+.footer-bottom ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+.footer-bottom ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-bottom ul li a:hover{
+    color: #438bf7;
+}
+.footer-bottom p{
+    padding-left: 10px;
+}
+.right-aside p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 40px 10px 0px 10px;
+    margin-bottom: 0px;
+}
+#social-media{
+    display: flex;
+    padding-left: 5px;
+    
+}
+#social-media li{
+    padding: 0 5px;
+}
+#social-media li a{
+    font-size: 12px;
+}
